@@ -18,3 +18,15 @@ int CalculateAverage(int[] values) {
 
     return win / values.Length;
 }
+
+int CalculateMin(int[] values) {
+    int tmp = int.MaxValue;
+    foreach (int i in values)
+    {
+        if (tmp>i)
+        {
+            tmp = i;
+        }
+    }
+    return tmp;
+}
