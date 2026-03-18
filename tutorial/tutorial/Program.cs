@@ -15,13 +15,13 @@ int CalculateAverage(int[] values) {
 }
 
 int CalculateMin(int[] values) {
-    var innyTyp = int.MaxValue;
+    var tymczasowe = int.MaxValue;
     foreach (var i in values)
     {
-        if (innyTyp>i)
+        if (tymczasowe>i)
         {
-            innyTyp = i;
+            tymczasowe = i;
         }
     }
-    return innyTyp;
+    return tymczasowe;
 }
