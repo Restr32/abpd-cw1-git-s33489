@@ -1,4 +1,6 @@
 ﻿
+using Microsoft.VisualBasic.CompilerServices;
+
 Console.WriteLine("Podaj wyrażenie liczby do mnożenia: ");
 
 float a = float.Parse(Console.ReadLine());
@@ -17,4 +19,17 @@ int CalculateAverage(int[] values) {
     }
 
     return win / values.Length;
+}
+
+int CalculateMax(int[] values) {
+    int tmp = int.MinValue;
+    foreach (int i in values)
+    {
+        if (tmp < i)
+        {
+            tmp = i;
+        }
+    }
+
+    return tmp;
 }
