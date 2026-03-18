@@ -10,6 +10,7 @@ a *= b;
 Console.WriteLine("Wynik: " + a);
 
 Console.WriteLine("avg test: "+CalculateAverage(new []{1, 2, 3, 4, 5, 6}));
+Console.WriteLine("avg test: "+CalculateMax(new []{-232, 4322, 54223, 843234}));
 
 int CalculateAverage(int[] values) {
     int win = 0;
